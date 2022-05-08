@@ -1,37 +1,19 @@
+import React from 'react';
 
-import { useRef } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useLocation, useNavigate } from 'react-router-dom';
-import auth from '../Firebase/Firebase.init';
+import { useNavigate } from 'react-router-dom';
+
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
-    const location = useLocation();
-    let from = location.state?.from?.pathname || "/";
 
-    const [
-        signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useSignInWithEmailAndPassword(auth);
-    const emailRef = useRef('');
-    const passwordRef = useRef('');
-    const handleLogin = e => {
-        e.preventDefault();
-        const email = emailRef.current.value;
-        const password = passwordRef.current.value;
-        signInWithEmailAndPassword(email, password)
-    }
 
 
     const navigate = useNavigate()
     const navigateRegister = e => {
         navigate('/register')
     };
-    if (user) {
-        navigate('/home')
-    }
+
+
     return (
 
         <div>
@@ -44,7 +26,7 @@ const Login = () => {
                         <h2 className="mt-6 text-center text-3xl font-sans font-extrabold text-indigo-900">Login to your account</h2>
 
                     </div>
-                    <form onSubmit={handleLogin} className="mt-8 space-y-6" action="#" method="POST">
+                    <form className="mt-8 space-y-6" action="#" method="POST">
                         <input type="hidden" name="remember" value="true" />
                         <div className="rounded-md shadow-sm -space-y-px">
                             <div className='mb-3'>
