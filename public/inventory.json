@@ -1,0 +1,122 @@
+[
+    {
+        "bikeName": "3T BIKES",
+        "supplierName": "Wings on Wheels",
+        "price": "$750",
+        "description": "The 3T Explore was the brands first gravel bike released in 2016 when the gravel industry started to hit off. Today, their range consists of high-end road and gravel bikes. 3T bikes is also a well-known sponsor in the cycling scene.",
+        "image": "https://i.ibb.co/pjZFGgr/exploro-max-grx-1x600-1-e1618303589995.jpg",
+        "quantity": "58"
+    },
+    {
+        "bikeName": "ALCHEMY BICYCLES",
+        "supplierName": "Armada Cycling",
+        "price": "$888",
+        "description": "We come to Alchemy Cycles, a company established in 1985 to supply the market’s growing thirst for mountain bikes. Yeti bikes are a popular choice for downhill mountain bikers, with the popularity starting with their early model the Lawwill DH-9.",
+        "image": "https://i.ibb.co/0yh1v1L/Rad-Rover-5-Bikexchange-767x486.jpg",
+        "quantity": "105"
+    },
+    {
+        "bikeName": "CANNONANDLE BIKE",
+        "supplierName": "Road Riders",
+        "price": "$520",
+        "description": "Cannonandle bikes is a bicycle company based in Austria. Founded by two dads with years of prior experience in the cycling industry, they noticed there was a lack of high-quality kids bikes available and were determined to solve the issue by making their own.",
+        "image": "https://i.ibb.co/f8SQnfk/Specialized-Bikes.jpg",
+        "quantity": "75"
+    },
+    {
+        "bikeName": "TAMASSO BIKES",
+        "supplierName": "Bicycle Habitat",
+        "price": "$638",
+        "description": "Tommaso Bikes has been around since 1985, specializing in manufacturing great value road bikes. They are an Italian bicycle company and combine traditional Italian design with craftsmanship since all of the bikes are assembled in-house.",
+        "image": "https://i.ibb.co/Ct0nq2V/GT-bikes.jpg",
+        "quantity": "65"
+    },
+    {
+        "bikeName": "GT BIKES",
+        "supplierName": "Road Eagles",
+        "price": "$1502",
+        "description": "GT Bikes is a bike brand steeped in history, having been around for almost 50 years producing quality two-wheelers. In its early beginnings, GT Bikes started as a BMX manufacturer, and only later started focusing on other types of bikes as well.",
+        "image": "https://i.ibb.co/1s4n6CR/YPB01I5K.jpg",
+        "quantity": "72"
+    },
+    {
+        "bikeName": "SURLY BIKES",
+        "supplierName": "AmazeSpeed",
+        "price": "$990",
+        "description": "Surly is one of the most iconic bicycle brands to produce steel-frame bicycles. Their approach to cycling is considered rather alternative compared to the mainstream as the Surly team is all for the environment and keeping it green.",
+        "image": "https://i.ibb.co/LZtP8Sg/Screen-Shot-2020-02-18-at-2-42-42-AM-600x412.png",
+        "quantity": "92"
+    },
+    {
+        "bikeName": "SCHWINN BIKES",
+        "supplierName": "Urban Tour",
+        "price": "$875",
+        "description": "Schwinn is a Chicago-based company that was established in 1895. At one point in their history, they were the most successful cycling company in all of the US. However, in 1992 they declared bankruptcy and were bought by Dorel Industries.",
+        "image": "https://i.ibb.co/VJ18xMC/Co-Op-1-1-W.jpg",
+        "quantity": "41"
+    },
+    {
+        "bikeName": "SALSA CYCLES",
+        "supplierName": "Master Wheels",
+        "price": "$450",
+        "description": "Salsa Cycles is another California-based bicycle manufacturer that made it on the list of best bike brands. They had been an independent company until in 1997 they were acquired by Quality Bicycle Products, who have been leading it successfully ever since.",
+        "image": "https://i.ibb.co/0tGMGhf/cubecc-602x350.png",
+        "quantity": "150"
+    },
+    {
+        "bikeName": "RIDE1UP BIKES",
+        "supplierName": "Advanced Axels",
+        "price": "$955",
+        "description": "Founded in 2011, Tern bicycles are committed to manufacturing bikes that are serviceable, and won’t go to land-fill. Their green and sustainable approach has enabled them to build a portfolio of folding and electric bikes.",
+        "image": "https://i.ibb.co/d0HgJ4y/diamondbackdivision.png",
+        "quantity": "28"
+    },
+    {
+        "bikeName": "PRIORITY BIKES",
+        "supplierName": "Boulder Bikes",
+        "price": "$1207",
+        "description": "Santa Cruz Bicycles had a very successful start back in 1993, with their first model called Tazmon. It was powered by single-pivot dual-suspension technology, which rocked the industry, and moved the boundaries of what was possible in mountain bike production.",
+        "image": "https://i.ibb.co/ZxsKvvZ/electrabikelogo-e1614261723502.png",
+        "quantity": "39"
+    },
+    {
+        "bikeName": "PIVOT BIKES",
+        "supplierName": "Active Bicycles",
+        "price": "$478",
+        "description": "The State Bicycle Company is a good bike brand built on fun. Based in Phoenix, Arizona, they are well known for their pivot bikes but have expanded to a wider range to suit more riding tastes and styles, including off-road and city bikes.",
+        "image": "https://i.ibb.co/QHNnXFm/BBHAC06-B14-MATTE-OBSIDIAN-2048x.jpg",
+        "quantity": "125"
+    },
+    {
+        "bikeName": "JULIANA BIKES",
+        "supplierName": "Great Cycleway",
+        "price": "$390",
+        "description": "Juliana bicycle is a cargo-bikes-focused bike brand that has a great selection of mid-range to high-end bikes on their fleet. Focused on businesses and active families – you can find front-loading, conventional, electric, and many other cargo bicycle variations.",
+        "image": "https://i.ibb.co/GWV2CMF/MY19-TCX-SLR-1-Color-A.jpg",
+        "quantity": "30"
+    },
+    {
+        "bikeName": "MOUNTAIN BIKES",
+        "supplierName": "Blissful Pedals",
+        "price": "$556",
+        "description": "There are few bikes out there that would be more easily recognizable with no labels on them than the UK’s Orange mountain bikes. Their authentic frames are unique and are a cult favorite of hardcore mountain riders for their performance.",
+        "image": "https://i.ibb.co/0MT24dh/ibis-mojo.jpg",
+        "quantity": "95"
+    },
+    {
+        "bikeName": "NORCO BYCYCLES",
+        "supplierName": "Just Cycles",
+        "price": "$1048",
+        "description": "Grown out from making Downhill racing bikes, their bikes’ setup-up and overall geometry are focused on the ‘perfection driven’ type cyclist who wants to trust their money on well-established brand perfections. Their bikes are expensive but available for the ones who are missing a proper Intense bike in their arsenal.",
+        "image": "https://i.ibb.co/XZGVJfG/intenseprimers.png",
+        "quantity": "50"
+    },
+    {
+        "bikeName": "KESTREL BIKES",
+        "supplierName": "Happy Star Cycles",
+        "price": "$465",
+        "description": "They launched the Kestrel 4000, the world’s first all-carbon composite frame, and continued innovating from there, introducing suspension and carbon to mountain bikes. Although now widely used, Kestrel is a pioneer in the bike industry for using carbon fiber.",
+        "image": "https://i.ibb.co/6Fhyx0D/2018-KESTREL-TALON-X-ROAD-SHIMANO-105-DARKBLUE.png",
+        "quantity": "48"
+    }
+]
