@@ -26,15 +26,15 @@ const Header = () => {
                         </div>
                         <div className="hidden sm:block absolute inset-x-0 left-0  sm:ml-6">
                             <div className="hidden sm:block absolute inset-y-0 right-0 items-center sm:ml-6">
-                                <div className=" flex  items-center justify-center space-x-4">
+                                <div className=" flex  items-center justify-center space-x-1">
 
                                     <Link to='/home' className=" hover:text-blue-100 text-white px-3 py-2 rounded-md text-md font-medium" aria-current="page">Home</Link>
                                     <Link to='/blogs' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Blog</Link>
 
 
-                                    {user ? <Link to='/manage-items' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Manage Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
                                     {user ? <Link to='/add-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Add Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
-                                    {user ? <Link to='/my-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">My Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                                    {user ? <Link to='/manage-items' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Manage Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                                    {user ? <Link to='/my-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">My Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
                                     <Link to='/about' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
 
                                     {
@@ -62,9 +62,9 @@ const Header = () => {
 
                         <Link to='/blogs' className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</Link>
 
-                        {user ? <Link to='/manage-items' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Manage Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
                         {user ? <Link to='/add-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Add Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
-                        {user ? <Link to='/my-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">My Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                        {user ? <Link to='/manage-items' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Manage Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                        {user ? <Link to='/my-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">My Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
                         <Link to='/about' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
 
                         {

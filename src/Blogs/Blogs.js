@@ -7,7 +7,8 @@ const Blogs = () => {
 
             <div className="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 ">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-indigo-900 ">Difference between Javascript and NodeJs?</h5>
-                <p className="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <p className="font-normal text-gray-700 dark:text-gray-400">Node JS Isn't any language rather It's a cross platform, open-source,server side runtime environment. It's allows javascript code to be run on server or even outside of the browser.
+                    On the other hand javascript is a lightweight, object-oriented scripting language. It's used to build dynamic HTML pages with interactive effects on webpage or any other application.</p>
             </div>
             <div className="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 ">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-indigo-900">What is the purpose of JWT and how does it work?</h5>

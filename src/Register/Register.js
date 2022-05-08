@@ -1,9 +1,7 @@
 import React from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-
 import { useNavigate } from 'react-router-dom';
 import auth from '../Firebase/Firebase.init';
-
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
@@ -23,6 +21,10 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         createUserWithEmailAndPassword(email, password);
+        window.alert('Registration Successful')
+    }
+    if (loading) {
+        <p className='font-medium text-indigo-500'>Loading...</p>;
     }
     if (user) {
         navigate('/')

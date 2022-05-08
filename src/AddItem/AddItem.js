@@ -1,9 +1,10 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import Toast from '../Toast/Toast';
 const AddItem = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        const proceed = window.confirm('Click OK to proceed');
+        const proceed = window.confirm('Everything OK?');
         if (proceed) {
             const url = `http://localhost:5000/inventory`;
             fetch(url, {
@@ -15,7 +16,7 @@ const AddItem = () => {
             })
                 .then(res => res.json())
                 .then(result => console.log(result))
-            alert('Item added successfully!!')
+            alert('Item successfully added')
             reset()
         }
 

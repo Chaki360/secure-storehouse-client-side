@@ -31,18 +31,18 @@ const ManageInventory = ({ inventory }) => {
         <div>
 
             <div className="max-w-sm bg-white rounded-lg shadow-md dark:border-gray-700">
-                <a href="#">
-                    <img className="p-8 rounded-t-lg" src={inventory.image} alt="product image" />
-                </a>
+
+                <img className="p-8 rounded-t-lg" src={inventory.image} alt="product image" />
+
                 <div className="p-5">
-                    <a href="#">
-                        <h5 className="mb-2 text-3xl font-bold tracking-tight text-indigo-900 ">{inventory.bikeName}</h5>
 
-                        <h5 className=" text-lg font-bold tracking-tight text-indigo-500 ">Supplier:{inventory.supplierName}</h5>
-                        <h5 className=" text-lg font-bold tracking-tight text-indigo-800 ">Available:{inventory.quantity}</h5>
+                    <h5 className="mb-2 text-3xl font-bold tracking-tight text-indigo-900 ">{inventory.bikeName}</h5>
+
+                    <h5 className=" text-lg font-bold tracking-tight text-indigo-500 ">Supplier:{inventory.supplierName}</h5>
+                    <h5 className=" text-lg font-bold tracking-tight text-indigo-800 ">Available:{inventory.quantity}</h5>
 
 
-                    </a>
+
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{inventory.description}</p>
 
                     <div className="flex justify-between items-center">

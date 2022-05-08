@@ -3,17 +3,12 @@ import { Link, useParams } from 'react-router-dom';
 
 const ManageStock = () => {
 
-    const handleDelivered = (id) => {
-        const url = `http://localhost:5000/inventory/${id}`
-        fetch(url, {
-            method: 'PUT'
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
+    const [num, setNum] = useState(452)
+    const handleDelivered = () => {
+        setNum(num - 1)
 
-            })
     }
+
 
     const { inventoryId } = useParams();
     const [inventory, setInventory] = useState({});
@@ -23,22 +18,23 @@ const ManageStock = () => {
             .then(res => res.json())
             .then(data => setInventory(data))
     }, []);
+
     return (
         <section className="">
 
             <div className="max-w-sm mt-5 mx-auto bg-white rounded-lg shadow-md dark:border-gray-700">
-                <a href="#">
-                    <img className="p-8 rounded-t-lg" src={inventory.image} alt="product image" />
-                </a>
+
+                <img className="p-8 rounded-t-lg" src={inventory.image} alt="product image" />
+
                 <div className="p-5">
-                    <a href="#">
-                        <h5 className="mb-2 text-3xl font-bold tracking-tight text-indigo-900 ">{inventory.bikeName}</h5>
 
-                        <h5 className=" text-lg font-bold tracking-tight text-indigo-500 ">Supplier:{inventory.supplierName}</h5>
-                        <h5 className=" text-lg font-bold tracking-tight text-indigo-800 ">Stock:{inventory.quantity}</h5>
+                    <h5 className="mb-2 text-3xl font-bold tracking-tight text-indigo-900 ">{inventory.bikeName}</h5>
+
+                    <h5 className=" text-lg font-bold tracking-tight text-indigo-500 ">Supplier:{inventory.supplierName}</h5>
+                    <h5 className=" text-lg font-bold tracking-tight text-indigo-800 ">Stock:{inventory.quantity}</h5>
 
 
-                    </a>
+
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{inventory.description}</p>
 
                     <div className="flex justify-between items-center">
