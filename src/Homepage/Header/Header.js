@@ -31,7 +31,7 @@ const Header = () => {
                                     <Link to='/home' className=" hover:text-blue-100 text-white px-3 py-2 rounded-md text-md font-medium" aria-current="page">Home</Link>
                                     <Link to='/blogs' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Blog</Link>
 
-                                    <Link to='/about' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">About</Link>
+                                    <Link to='/about' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
                                     {user ? <Link to='/manage-items' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Manage Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
                                     {user ? <Link to='/add-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Add Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
 
