@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { signOut } from 'firebase/auth';
 import auth from '../../Firebase/Firebase.init';
@@ -31,9 +31,11 @@ const Header = () => {
                                     <Link to='/home' className=" hover:text-blue-100 text-white px-3 py-2 rounded-md text-md font-medium" aria-current="page">Home</Link>
                                     <Link to='/blogs' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Blog</Link>
 
-                                    <Link to='/about' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
+
                                     {user ? <Link to='/manage-items' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Manage Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
                                     {user ? <Link to='/add-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Add Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                                    {user ? <Link to='/my-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">My Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                                    <Link to='/about' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
 
                                     {
                                         user ?
@@ -60,7 +62,10 @@ const Header = () => {
 
                         <Link to='/blogs' className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</Link>
 
-                        <Link to='/about' className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</Link>
+                        {user ? <Link to='/manage-items' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Manage Items</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                        {user ? <Link to='/add-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">Add Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                        {user ? <Link to='/my-item' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">My Item</Link> : <Link to='/' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium"></Link>}
+                        <Link to='/about' className=" text-white hover:text-blue-100 px-3 py-2 rounded-md text-sm font-medium">About Us</Link>
 
                         {
                             user ?
