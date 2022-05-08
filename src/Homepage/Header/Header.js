@@ -12,6 +12,7 @@ const Header = () => {
         navigate('/login')
     }
 
+
     return (
 
         <nav className="bg-indigo-500 sticky z-50 top-0">
@@ -20,8 +21,8 @@ const Header = () => {
 
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex-shrink-0 gap-3 flex items-center">
-                            <img width={42} src='https://i.ibb.co/fNB7nds/sheeponbike-ovejas-en-13451.png' alt='' />
-                            <div><Link to='/' className='text-3xl font-sans font-extrabold text-gray-800 hover:text-red-50'>Secure StoreHouse</Link></div>
+                            <img width={52} src='https://i.ibb.co/fNB7nds/sheeponbike-ovejas-en-13451.png' alt='' />
+                            <div><Link to='/' className='text-3xl font-sans font-extrabold text-indigo-900 hover:text-red-100'>Secure StoreHouse</Link></div>
                         </div>
                         <div className="hidden sm:block absolute inset-x-0 left-0  sm:ml-6">
                             <div className="hidden sm:block absolute inset-y-0 right-0 items-center sm:ml-6">
@@ -52,7 +53,7 @@ const Header = () => {
                 </div>
 
 
-                <div className="sm:hidden">
+                <div className="sm:hidden sticky z-50 top-0">
                     <div className="px-2 pt-2 pb-3 space-y-1">
 
                         <Link to='/home' className=" text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</Link>

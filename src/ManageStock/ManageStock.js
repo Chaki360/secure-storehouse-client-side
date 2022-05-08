@@ -3,7 +3,17 @@ import { Link, useParams } from 'react-router-dom';
 
 const ManageStock = () => {
 
+    const handleDelivered = (id) => {
+        const url = `http://localhost:5000/inventory/${id}`
+        fetch(url, {
+            method: 'PUT'
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
 
+            })
+    }
 
     const { inventoryId } = useParams();
     const [inventory, setInventory] = useState({});
@@ -33,7 +43,7 @@ const ManageStock = () => {
 
                     <div className="flex justify-between items-center">
                         <span className="text-3xl font-bold text-gray-900 ">{inventory.price}</span>
-                        <button className="text-white bg-indigo-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">Delivered</button>
+                        <button onClick={handleDelivered} className="text-white bg-indigo-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">Delivered</button>
                     </div>
 
 
