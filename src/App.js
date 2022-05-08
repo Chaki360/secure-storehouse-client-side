@@ -14,6 +14,7 @@ import Footer from './Footer/Footer'
 import ManageStock from './ManageStock/ManageStock';
 import ManageInventories from './ManageInventories/ManageInventories';
 import AddItem from './AddItem/AddItem';
+import MyItem from './MyItem/MyItem';
 function App() {
   return (
     <div>
@@ -28,6 +29,7 @@ function App() {
         <Route path='/inventory/:inventoryId' element={<ManageStock></ManageStock>} />
         <Route path='/manage-items' element={<ManageInventories></ManageInventories>} />
         <Route path='/add-item' element={<AddItem></AddItem>} />
+        <Route path='/my-item' element={<MyItem></MyItem>} />
         <Route path='/login' element={<Login></Login>} />
         <Route path='/register' element={<Register></Register>} />
         <Route path='*' element={<NotFound></NotFound>} />
