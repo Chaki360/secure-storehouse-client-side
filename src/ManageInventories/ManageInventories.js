@@ -9,7 +9,7 @@ const ManageInventories = () => {
         fetch('http://localhost:5000/inventory')
             .then(res => res.json())
             .then(data => SetInventories(data))
-    }, []);
+    }, [inventories]);
     return (
         <div>
             <div className='inventory-items'>
