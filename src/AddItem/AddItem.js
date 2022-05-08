@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 const AddItem = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         const proceed = window.confirm('Click OK to proceed');
         if (proceed) {
@@ -15,6 +15,8 @@ const AddItem = () => {
             })
                 .then(res => res.json())
                 .then(result => console.log(result))
+            alert('Item added successfully!!')
+            reset()
         }
 
     };
