@@ -2,6 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 const ManageStock = () => {
+
+    const handleAddStock = e => {
+
+    }
+
     const { inventoryId } = useParams();
     const [inventory, setInventory] = useState({});
     useEffect(() => {
