@@ -41,7 +41,7 @@ const ResetPassword = () => {
                         </div>
                     </form>
                     <div>
-                        <h3 className='text-lg'>Already registered?<button onClick={handleNavigateLogIn} className=' text-indigo-600 hover:text-red-600' >Back to login</button></h3>
+                        <h3 className='text-lg'>Remember?<button onClick={handleNavigateLogIn} className=' text-indigo-600 hover:text-red-600' >Back to login</button></h3>
 
                     </div>
 

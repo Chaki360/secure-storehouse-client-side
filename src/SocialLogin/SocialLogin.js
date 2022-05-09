@@ -1,10 +1,12 @@
 import React from 'react';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import auth from '../Firebase/Firebase.init';
 
 const SocialLogin = () => {
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     const navigate = useNavigate();
     let errorElement;
     let loadingElement;
@@ -24,7 +26,7 @@ const SocialLogin = () => {
     }
 
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true })
     }
     if (user) {
         navigate('/home')

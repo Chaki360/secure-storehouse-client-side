@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -26,6 +27,7 @@ const ManageInventory = ({ inventory }) => {
     const navigate = useNavigate();
     const navigateToManageStock = id => {
         navigate(`/inventory/${id}`);
+
     }
     return (
         <div>
