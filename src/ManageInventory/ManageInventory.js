@@ -11,7 +11,7 @@ const ManageInventory = ({ inventory }) => {
     const handleDeleteStock = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://calm-badlands-08364.herokuapp.com/inventory/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
