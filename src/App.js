@@ -40,7 +40,9 @@ function App() {
           <PrivateRoute><AddItem></AddItem></PrivateRoute>}
         />
         <Route path='/my-item' element={
-          <PrivateRoute><MyItem></MyItem></PrivateRoute>
+          <PrivateRoute><MyItem></MyItem>
+
+          </PrivateRoute>
         } />
         <Route path='/login' element={<Login></Login>} />
         <Route path='/register' element={<Register></Register>} />
