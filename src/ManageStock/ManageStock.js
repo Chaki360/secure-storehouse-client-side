@@ -3,11 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 
 const ManageStock = () => {
 
-    const [num, setNum] = useState(452)
-    const handleDelivered = () => {
-        setNum(num - 1)
-
-    }
 
 
     const { inventoryId } = useParams();
@@ -19,6 +14,23 @@ const ManageStock = () => {
             .then(data => setInventory(data))
     }, []);
 
+    const handleDelivered = (inventory, id) => {
+
+
+        const newQuantity = parseInt(inventory.quantity) - 1
+        const updateQuantity = { newQuantity }
+        fetch(`http://localhost:5000/inventory/${id}`, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(updateQuantity)
+        })
+            .then(res => res.json())
+            .then(result => {
+                alert('Successfully Delivered')
+            })
+    }
     return (
         <section className="">
 
@@ -39,7 +51,7 @@ const ManageStock = () => {
 
                     <div className="flex justify-between items-center">
                         <span className="text-3xl font-bold text-gray-900 ">{inventory.price}</span>
-                        <button onClick={handleDelivered} className="text-white bg-indigo-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">Delivered</button>
+                        <button className="text-white bg-indigo-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">Delivered</button>
                     </div>
 
 
@@ -59,7 +71,7 @@ const ManageStock = () => {
             </div>
 
             <div className='text-center mt-8 mb-4'>
-                <Link to='/manage-items' className=" rounded-tr-lg hover:bg-indigo-600 bg-indigo-700  text-base font-medium leading-none text-white p-4  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700">Manage Items</Link>
+                <Link to='/manage-items' className=" rounded-tr-lg hover:bg-indigo-600 bg-indigo-900  text-base font-medium leading-none text-white p-4  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700">Manage Items</Link>
             </div>
 
 

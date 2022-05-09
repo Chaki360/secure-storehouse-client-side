@@ -1,7 +1,8 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import Toast from '../Toast/Toast';
+import { useNavigate } from 'react-router-dom';
 const AddItem = () => {
+    const navigate = useNavigate()
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         const proceed = window.confirm('Everything OK?');
@@ -15,9 +16,12 @@ const AddItem = () => {
                 body: JSON.stringify(data)
             })
                 .then(res => res.json())
-                .then(result => console.log(result))
-            alert('Item successfully added')
-            reset()
+                .then(result => {
+                    console.log(result)
+                    alert('Item successfully added')
+                    reset()
+                })
+
         }
 
     };

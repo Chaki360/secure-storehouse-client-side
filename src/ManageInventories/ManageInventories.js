@@ -19,7 +19,7 @@ const ManageInventories = () => {
                 )};
             </div>
             <div className='text-center mt-4 mb-4'>
-                <Link to='/add-item' className=" rounded-tr-lg hover:bg-indigo-600 bg-indigo-800  text-base font-medium leading-none text-white p-4  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-800 shadow-xl">Add a Item</Link>
+                <Link to='/add-item' className=" rounded-tr-lg hover:bg-indigo-600 bg-indigo-800  text-base font-medium leading-none text-white p-4  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-800 shadow-xl">Add more Items</Link>
             </div>
         </div>
     );

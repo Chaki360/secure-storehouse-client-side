@@ -10,6 +10,8 @@ const SocialLogin = () => {
     let loadingElement;
     const [signInWithGithub] = useSignInWithGithub(auth);
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+
+
     if (error) {
 
         errorElement = <div>
@@ -22,7 +24,10 @@ const SocialLogin = () => {
     }
 
     if (user) {
-        navigate('/')
+        navigate('/home')
+    }
+    if (user) {
+        navigate('/home')
     }
     return (
         <section>

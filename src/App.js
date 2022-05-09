@@ -15,6 +15,7 @@ import ManageStock from './ManageStock/ManageStock';
 import ManageInventories from './ManageInventories/ManageInventories';
 import AddItem from './AddItem/AddItem';
 import MyItem from './MyItem/MyItem';
+import ResetPassword from './ResetPassWord/ResetPassword';
 function App() {
   return (
     <div>
@@ -32,6 +33,7 @@ function App() {
         <Route path='/my-item' element={<MyItem></MyItem>} />
         <Route path='/login' element={<Login></Login>} />
         <Route path='/register' element={<Register></Register>} />
+        <Route path='/reset-password' element={<ResetPassword></ResetPassword>} />
         <Route path='*' element={<NotFound></NotFound>} />
 
 

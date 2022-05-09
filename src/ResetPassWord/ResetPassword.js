@@ -1,63 +1,29 @@
-import React, { useRef } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import auth from '../Firebase/Firebase.init';
-
 import SocialLogin from '../SocialLogin/SocialLogin';
 
-const Login = () => {
-    const emailRef = useRef('');
-    const passwordRef = useRef('');
-    const [
-        signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useSignInWithEmailAndPassword(auth);
-
-
+const ResetPassword = () => {
     const navigate = useNavigate()
-    const navigateRegister = e => {
-        navigate('/register')
-    };
-    const navigateResetpassword = e => {
-        navigate('/reset-password')
-    };
-    const handleLogIn = e => {
-        e.preventDefault();
-        const email = emailRef.current.value;
-        const password = passwordRef.current.value;
-        console.log(email, password);
-        signInWithEmailAndPassword(email, password);
+    const handleNavigateLogIn = () => {
+        navigate('/login')
     }
-    if (user) {
-        navigate('/')
-    }
-
     return (
-
         <div>
-
-
             <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-md w-full space-y-8">
                     <div>
 
-                        <h2 className="mt-6 text-center text-3xl font-sans font-extrabold text-indigo-900">Login to your account</h2>
+                        <h2 className="mt-6 text-center text-3xl font-sans font-extrabold text-indigo-900">Reset your password now</h2>
 
                     </div>
-                    <form onSubmit={handleLogIn} className="mt-8 space-y-6" action="#" method="POST">
+                    <form className="mt-8 space-y-6" action="#" method="POST">
                         <input type="hidden" name="remember" value="true" />
                         <div className="rounded-md shadow-sm -space-y-px">
                             <div>
 
                                 <input id="email-address" name="email" type="email" autoComplete="email" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Enter your email address" />
                             </div>
-                            <div>
 
-                                <input id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
-                            </div>
                         </div>
 
 
@@ -70,21 +36,20 @@ const Login = () => {
                                         <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                                     </svg>
                                 </span>
-                                Login
+                                Reset password
                             </button>
                         </div>
                     </form>
                     <div>
-                        <h3 className='text-lg'>New here?<button onClick={navigateRegister} className=' text-indigo-600 hover:text-red-600' >Please Register</button></h3>
-                        <h3 className='text-lg'>Forgotten password?<button onClick={navigateResetpassword} className=' text-indigo-600 hover:text-red-600' >Reset Now</button></h3>
+                        <h3 className='text-lg'>Already registered?<button onClick={handleNavigateLogIn} className=' text-indigo-600 hover:text-red-600' >Back to login</button></h3>
+
                     </div>
 
                     <SocialLogin></SocialLogin>
                 </div >
             </div >
         </div>
-
     );
 };
 
-export default Login;
+export default ResetPassword;
