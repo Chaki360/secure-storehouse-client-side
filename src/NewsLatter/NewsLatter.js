@@ -5,7 +5,7 @@ const NewsLatter = () => {
         <section>
             <div>
                 <h1 className='text-4xl mb-4 mt-4 mx-auto text-center font-extrabold text-indigo-900'>Want to hear more from us...?</h1>
-                <p className='text-medium font-medium text-center text-indigo-500'>If you want to hear from us when we add something new to our platform please Sign up for our newsletter and we'll notify you through your email.</p>
+                <p className='text-medium font-medium text-center text-indigo-500'>If you want to hear from us when we add something new to our platform please subscribe our newsletter and we'll notify you through your email.</p>
             </div>
             <div className='min-h-full flex items-center justify-center'>
 

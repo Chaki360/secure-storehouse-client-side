@@ -43,7 +43,7 @@ const Register = () => {
                         <h2 className="mt-6 text-center text-3xl font-sans font-extrabold text-indigo-900">Register your account</h2>
 
                     </div>
-                    <form onSubmit={handleRegistration} className="mt-8 space-y-6" action="#" method="POST">
+                    <form onSubmit={handleRegistration} className="mt-8 space-y-6">
                         <input type="hidden" name="remember" value="true" />
                         <div className="rounded-md shadow-sm -space-y-px">
                             <div>

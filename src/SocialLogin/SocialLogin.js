@@ -28,9 +28,7 @@ const SocialLogin = () => {
     if (user) {
         navigate(from, { replace: true })
     }
-    if (user) {
-        navigate('/home')
-    }
+
     return (
         <section>
             <div className='text-center'>
