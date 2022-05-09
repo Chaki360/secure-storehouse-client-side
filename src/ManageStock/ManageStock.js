@@ -14,23 +14,7 @@ const ManageStock = () => {
             .then(data => setInventory(data))
     }, []);
 
-    const handleDelivered = (inventory, id) => {
 
-
-        const newQuantity = parseInt(inventory.quantity) - 1
-        const updateQuantity = { newQuantity }
-        fetch(`http://localhost:5000/inventory/${id}`, {
-            method: "PUT",
-            headers: {
-                "content-type": "application/json"
-            },
-            body: JSON.stringify(updateQuantity)
-        })
-            .then(res => res.json())
-            .then(result => {
-                alert('Successfully Delivered')
-            })
-    }
     return (
         <section className="">
 

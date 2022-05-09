@@ -28,16 +28,20 @@ function App() {
         <Route path='/home' element={<Homepage></Homepage>} />
         <Route path='/blogs' element={<Blogs></Blogs>} />
         <Route path='/about' element={<About></About>} />
-        <Route path='/inventory/:inventoryId' element={<PrivateRoute>
-          <ManageStock></ManageStock>
-        </PrivateRoute>} />
-        <Route path='/manage-items' element={<PrivateRoute>
-          <ManageInventories></ManageInventories>
-        </PrivateRoute>} />
-        <Route path='/add-item' element={<PrivateRoute>
-          <AddItem></AddItem>
-        </PrivateRoute>} />
-        <Route path='/my-item' element={<MyItem></MyItem>} />
+        <Route path='/inventory/:inventoryId' element={
+          <PrivateRoute><ManageStock></ManageStock></PrivateRoute>}
+        />
+        <Route path='/manage-items' element={
+          <PrivateRoute>
+            <ManageInventories></ManageInventories>
+          </PrivateRoute>}
+        />
+        <Route path='/add-item' element={
+          <PrivateRoute><AddItem></AddItem></PrivateRoute>}
+        />
+        <Route path='/my-item' element={
+          <PrivateRoute><MyItem></MyItem></PrivateRoute>
+        } />
         <Route path='/login' element={<Login></Login>} />
         <Route path='/register' element={<Register></Register>} />
         <Route path='/reset-password' element={<ResetPassword></ResetPassword>} />
