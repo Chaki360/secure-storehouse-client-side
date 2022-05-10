@@ -9,7 +9,7 @@ import Banner from './Banner/Banner';
 const Homepage = () => {
     const [inventories, SetInventories] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/inventory')
+        fetch('https://calm-badlands-08364.herokuapp.com/inventory')
             .then(res => res.json())
             .then(data => SetInventories(data))
     }, []);
