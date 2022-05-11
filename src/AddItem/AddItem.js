@@ -7,7 +7,7 @@ const AddItem = () => {
     const onSubmit = data => {
         const proceed = window.confirm('Everything OK?');
         if (proceed) {
-            const url = `http://localhost:5000/inventory`;
+            const url = `https://calm-badlands-08364.herokuapp.com/inventory`;
             fetch(url, {
                 method: 'POST',
                 headers: {

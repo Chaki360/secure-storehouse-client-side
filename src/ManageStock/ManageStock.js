@@ -20,7 +20,9 @@ const ManageStock = () => {
 
             <div className="max-w-sm mt-5 mx-auto bg-white rounded-lg shadow-md dark:border-gray-700">
 
-                <img className="p-8 rounded-t-lg" src={inventory.image} alt="product image" />
+                <figure>
+                    <img className="p-8 rounded-t-lg" src={inventory.image} alt="product image" />
+                </figure>
 
                 <div className="p-5">
 
